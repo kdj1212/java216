@@ -5,75 +5,23 @@
         나의 웹페이지
     </title>
 
-    <style>
-        html, body {
-            height: 100%;
-        }
+    <link type="text/css" rel="stylesheet" href="style.css">
 
-        header {
-            background-color: rgb(10, 134, 76);
-            color: white;
-            padding: 20px;
-        }
-
-        nav {   
-            background-color: rgb(7, 103, 106);
-            padding: 5px;
-            color: white;
-        }
-
-        nav ul {
-            list-style: none;
-        }
-
-        ul li {
-            display: inline;
-            padding: 14px;
-        }
-
-        ul li a {
-            text-decoration: none;
-            color: white;
-        }
-
-        ul li a:hover {
-            text-decoration: underline;
-        }
-
-        aside {
-            background-color: rgb(220, 240, 240);
-            float: right;
-            width: 34.9%;
-            text-align: center;
-        }
-
-        section {
-            width: 65%;
-            float: left;
-        }
-
-        footer {
-            clear: both;
-            text-align: center;
-            padding: 12px;
-        }
-
-
-    </style>
 </head>
 
 <body>
     <header>
-        <h1>Veggie Shop</h1>
+        <a href="index.html"><h1>Veggie Shop</h1></a>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#fruits" target="_blank"> Fresh Fruits </a></li>
+            <li><a href="#fruits"> Fresh Fruits </a></li>
             <li><a href="#veggies"> Fresh Veggies </a></li>
             <li><a href="#salads">Fresh Salads</a></li>
-            <li>Seeds and Nuts</li>
-            <li>Gift Box</li>
+            <li><a href="#nuts">Seeds and Nuts</a></li>
+            <li><a href="#gift">Gift Box</a></li>
+            <li><a href="bmi.html" target="_blank">BMI 계산기</a></li>
             <li><a href="login.html" target="_blank">로그인</a></li>
             <li><a href="sign.html" target="_blank">회원가입</a></li>
         </ul>
@@ -98,8 +46,7 @@
         <article id="bb">
             <h2 id="veggies"> Fresh Veggies</h2>
 
-            <a href="#" target="_blank"> <img src="image/onion.jpg" width="150" height="150"> </a>
-
+            <img src="image/onion.jpg" width="150" height="150">
             <img src="image/pumpkin.jpg" width="150" height="150">
             <img src="image/broccoli.jpg" width="150" height="150">
             <img src="image/tomato.jpg" width="150" height="150">
@@ -109,11 +56,28 @@
         <article id="cc">
             <h2 id="salads"> Fresh Salads</h2>
 
-            <a href="#" target="_blank"> <img src="image/salad1.jpg" width="150" height="150"> </a>
-
+  <img src="image/salad1.jpg" width="150" height="150">
             <img src="image/pasta.jpg" width="150" height="150">
             <img src="image/salad2.jpg" width="150" height="150">
             <img src="image/salad3.jpg" width="150" height="150">
+        </article>
+
+        <article id="dd">
+            <h2 id="nuts">Seeds and nuts</h2>
+
+            <img src="image/nuts1.jpg" width="150" height="150">
+            <img src="image/nuts2.jpg" width="150" height="150">
+            <img src="image/nuts3.jpg" width="150" height="150">
+            <img src="image/nuts4.jpg" width="150" height="150">
+        </article>
+
+        <article id="gg">
+            <h2 id="gift">Gift Box</h2>
+
+            <img src="image/gift1.jpg" width="150" height="150">
+            <img src="image/gift2.jpg" width="150" height="150">
+            <img src="image/gift3.jpg" width="150" height="150">
+            <img src="image/gift4.jpg" width="150" height="150">
         </article>
     </section>
 
