@@ -1,34 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>체질량 계산기</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
+
+    <header>
+        <a href="index.html"><h1>Veggie Shop</h1></a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html"> Fresh Fruits </a></li>
+            <li><a href="#veggies"> Fresh Veggies </a></li>
+            <li><a href="#salads">Fresh Salads</a></li>
+            <li><a href="#nuts">Seeds and Nuts</a></li>
+            <li><a href="#gift">Gift Box</a></li>
+            <li><a href="bmi.html" target="_blank">BMI 계산기</a></li>
+            <li><a href="login.html" target="_blank">로그인</a></li>
+            <li><a href="sign.html" target="_blank">회원가입</a></li>
+        </ul>
+    </nav>
+
+    <h2>체질량지수 계산기</h2>
+    키m : <input id="height" type="number"><br>
+    체중kg : <input id="weight" type="number"><br>
+
+    <input type="button" onclick="calc();" value="계산">
+
+    <h3 id="result"></h3>
+    <h3 id="result2"></h3>
+
+    <input type="button" onclick="sub();" value="눌러주세요">
+    <h2 id="test"></h2>
+
     <script>
-        document.write("<h1>BMI 계산기</h1>"); 
 
-        
-        let weight = prompt("체중을 입력하세요.");
+        function calc() {
+            let x = document.getElementById("weight").value;
+            let y = document.getElementById("height").value;
 
-        let height = prompt("신장을 입력하세요.");
+            let bmi = x / (y * y)
+            document.getElementById("result").innerHTML = bmi;
 
-        document.write("신장:");
-        document.write(height);
-        document.write("<br> 체중:");
-        document.write(weight);
-        document.write("BMI: <br>");
+            if (bmi >= 25) {
+                document.getElementById("result2").innerHTML = "비만입니다.";
+            }
+
+            else if ((bmi >= 23) && (bmi < 25)) {
+                document.getElementById("result2").innerHTML = "과체중입니다.";
+            }
+
+            else if (bmi >= 18.5) {
+                document.getElementById("result2").innerHTML = "정상입니다.";
+            }
+
+            else {
+                document.getElementById("result2").innerHTML = "저체중입니다.";
+            }
+
+        }
 
 
 
-
-
-        document.write(weight/(height*height)); // 체중 / 신장*신장
+        function sub() {
+            const name = prompt('이름을 입력해주세요.');
+            document.getElementById("test").innerHTML = "Welcome " + name;
+        }
 
 
     </script>
 
 </body>
+
 </html>
