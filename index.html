@@ -10,92 +10,103 @@
 </head>
 
 <body>
-    <header>
-        <a href="index.html"><h1>Veggie Shop</h1></a>
-    </header>
 
     <nav>
-        <ul>
-            <li><a href="#fruits"> Fresh Fruits </a></li>
-            <li><a href="#veggies"> Fresh Veggies </a></li>
-            <li><a href="#salads">Fresh Salads</a></li>
-            <li><a href="#nuts">Seeds and Nuts</a></li>
-            <li><a href="#gift">Gift Box</a></li>
-            <li><a href="bmi.html" target="_blank">BMI 계산기</a></li>
-            <li><a href="login.html" target="_blank">로그인</a></li>
-            <li><a href="sign.html" target="_blank">회원가입</a></li>
-        </ul>
+        <div class="title">
+            <h1>Veggie Shop</h1>
+
+        </div>
+
+        <div class="category">
+            <ul>
+                <li><a href="#fruits">과일</a></li>
+                <li><a href="#veggies">야채</a></li>
+                <li><a href="#salads">샐러드</a></li>
+                <li><a href="#nuts">견과류</a></li>
+                <li><a href="#gift">선물 박스</a></li>
+                <li><a href="bmi.html">BMI 계산</a></li>
+            </ul>
+        </div>
+
+        <div class="login">
+            <div class="sign_box" style="margin-right: 12px;"><a href="sign.html">회원가입</a></div>
+            <div class="login_box"><a href="login.html">로그인</a></div>
+        </div>
+        
+        </div>
     </nav>
 
-    <section>
-        <img src="veggies.jpg" width="650" height="350">
+    <div class="container">
+        <section>
+            <img class="banner" src="veggies.jpg" width="100%" height="500px" style="object-fit: cover;">
 
-        <p> 신선함을 당신의 식탁에! <br>
-            매일 아침 들어오는 신선한 채소와 과일로 건강한 하루를 시작하세요. <br>
-            Veggie Shop 에서 자연의 맛을 만나보세요!
-        </p>
-        <Article id="aa">
-            <h2 id="fruits">Fresh Fruits</h2>
-            <a href="apple.html" target="_blank"> <img src="image/apple.jpg" width="150" height="150"> </a>
+            <p style="font-size: 18px;"> 신선함을 당신의 식탁에! <br>
+                매일 아침 들어오는 신선한 채소와 과일로 건강한 하루를 시작하세요. <br>
+                Veggie Shop 에서 자연의 맛을 만나보세요!
+            </p>
+            <Article id="aa">
+                <h2 id="fruits" class="article-title">과일</h2>
+                <a href="apple.html" target="_blank"> <img src="image/apple.jpg" width="150" height="150"> </a>
 
-            <img src="image/banana.jpg" width="150" height="150">
-            <img src="image/berries.jpg" width="150" height="150">
-            <img src="image/orange.jpg" width="150" height="150">
-        </Article>
-        <br>
-        <article id="bb">
-            <h2 id="veggies"> Fresh Veggies</h2>
+                <img src="image/banana.jpg" width="150" height="150">
+                <img src="image/berries.jpg" width="150" height="150">
+                <img src="image/orange.jpg" width="150" height="150">
+            </Article>
+            <br>
+            <article id="bb">
+                <h2 id="veggies" class="article-title">야채</h2>
 
-            <img src="image/onion.jpg" width="150" height="150">
-            <img src="image/pumpkin.jpg" width="150" height="150">
-            <img src="image/broccoli.jpg" width="150" height="150">
-            <img src="image/tomato.jpg" width="150" height="150">
-        </article>
-        <br>
+                <img src="image/onion.jpg" width="150" height="150">
+                <img src="image/pumpkin.jpg" width="150" height="150">
+                <img src="image/broccoli.jpg" width="150" height="150">
+                <img src="image/tomato.jpg" width="150" height="150">
+            </article>
+            <br>
 
-        <article id="cc">
-            <h2 id="salads"> Fresh Salads</h2>
+            <article id="cc">
+                <h2 id="salads" class="article-title">샐러드</h2>
 
-  <img src="image/salad1.jpg" width="150" height="150">
-            <img src="image/pasta.jpg" width="150" height="150">
-            <img src="image/salad2.jpg" width="150" height="150">
-            <img src="image/salad3.jpg" width="150" height="150">
-        </article>
+                <img src="image/salad1.jpg" width="150" height="150">
+                <img src="image/pasta.jpg" width="150" height="150">
+                <img src="image/salad2.jpg" width="150" height="150">
+                <img src="image/salad3.jpg" width="150" height="150">
+            </article>
 
-        <article id="dd">
-            <h2 id="nuts">Seeds and nuts</h2>
+            <article id="dd">
+                <h2 id="nuts" class="article-title">견과류</h2>
 
-            <img src="image/nuts1.jpg" width="150" height="150">
-            <img src="image/nuts2.jpg" width="150" height="150">
-            <img src="image/nuts3.jpg" width="150" height="150">
-            <img src="image/nuts4.jpg" width="150" height="150">
-        </article>
+                <img src="image/nuts1.jpg" width="150" height="150">
+                <img src="image/nuts2.jpg" width="150" height="150">
+                <img src="image/nuts3.jpg" width="150" height="150">
+                <img src="image/nuts4.jpg" width="150" height="150">
+            </article>
 
-        <article id="gg">
-            <h2 id="gift">Gift Box</h2>
+            <article id="gg">
+                <h2 id="gift" class="article-title">선물</h2>
 
-            <img src="image/gift1.jpg" width="150" height="150">
-            <img src="image/gift2.jpg" width="150" height="150">
-            <img src="image/gift3.jpg" width="150" height="150">
-            <img src="image/gift4.jpg" width="150" height="150">
-        </article>
-    </section>
+                <img src="image/gift1.jpg" width="150" height="150">
+                <img src="image/gift2.jpg" width="150" height="150">
+                <img src="image/gift3.jpg" width="150" height="150">
+                <img src="image/gift4.jpg" width="150" height="150">
+            </article>
+        </section>
 
-    <aside>
-        <h3>광고</h3>
-        <h4>땅에서 식탁까지, 신선함 그대로!</h4>
-        <p>가장 가까운 농장에서 바로 당신의 집으로!</p>
-        <img src="image/farm.jpg">
-        <img src="image/delivery.jpg">
-        <p>오늘 수확한 신선한 야채와 채소를 매일 바로 배달해 드립니다.</p>
-        <ul>
-            <li>매일 아침 수확한 채소</li>
-            <li>현지 농장에서 직배송</li>
-            <li>환경을 생각한 로컬 푸드</li>
-            <li>신선도 100% 보장</li>
-            <li>주문 후 바로 배송</li>
-        </ul>
-    </aside>
+        <aside>
+            <h3>광고</h3>
+            <h4>땅에서 식탁까지, 신선함 그대로!</h4>
+            <p>가장 가까운 농장에서 바로 당신의 집으로!</p>
+            <img src="image/farm.jpg" style="margin-bottom: 16px;">
+            <img src="image/delivery.jpg">
+            <p>오늘 수확한 신선한 야채와 채소를 매일 바로 배달해 드립니다.</p>
+            <ul>
+                <li>✔매일 아침 수확한 채소</li>
+                <li>✔현지 농장에서 직배송</li>
+                <li>✔환경을 생각한 로컬 푸드</li>
+                <li>✔신선도 100% 보장</li>
+                <li>✔주문 후 바로 배송</li>
+            </ul>
+        </aside>
+    </div>
 
     <footer>
         <ul>

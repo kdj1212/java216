@@ -11,34 +11,43 @@
 
 <body>
 
-    <header>
-        <a href="index.html"><h1>Veggie Shop</h1></a>
-    </header>
-
     <nav>
-        <ul>
-            <li><a href="index.html"> Fresh Fruits </a></li>
-            <li><a href="#veggies"> Fresh Veggies </a></li>
-            <li><a href="#salads">Fresh Salads</a></li>
-            <li><a href="#nuts">Seeds and Nuts</a></li>
-            <li><a href="#gift">Gift Box</a></li>
-            <li><a href="bmi.html" target="_blank">BMI 계산기</a></li>
-            <li><a href="login.html" target="_blank">로그인</a></li>
-            <li><a href="sign.html" target="_blank">회원가입</a></li>
-        </ul>
+        <div class="title">
+            <h1>Veggie Shop</h1>
+
+        </div>
+
+        <div class="category">
+            <ul>
+                <li><a href="index.html">과일</a></li>
+                <li><a href="#veggies">야채</a></li>
+                <li><a href="#salads">샐러드</a></li>
+                <li><a href="#nuts">견과류</a></li>
+                <li><a href="#gift">선물 박스</a></li>
+                <li><a href="bmi.html">BMI 계산</a></li>
+            </ul>
+        </div>
+
+        <div class="login">
+            <div class="sign_box" style="margin-right: 12px;"><a href="sign.html">회원가입</a></div>
+            <div class="login_box"><a href="login.html">로그인</a></div>
+        </div>
+        
+        </div>
     </nav>
 
-    <h2>체질량지수 계산기</h2>
-    키m : <input id="height" type="number"><br>
-    체중kg : <input id="weight" type="number"><br>
+    <div style="text-align: center;">
 
-    <input type="button" onclick="calc();" value="계산">
+    <h2>체질량지수 계산기</h2>
+    키<br> <input id="height" type="number" placeholder="키를 입력해주세요."><br>
+    체중<br><input id="weight" type="number" placeholder="몸무게를 입력해주세요."><br>
+
+    <input type="button" onclick="calc();" value="계산하기">
 
     <h3 id="result"></h3>
     <h3 id="result2"></h3>
 
-    <input type="button" onclick="sub();" value="눌러주세요">
-    <h2 id="test"></h2>
+</div>
 
     <script>
 
@@ -68,11 +77,6 @@
         }
 
 
-
-        function sub() {
-            const name = prompt('이름을 입력해주세요.');
-            document.getElementById("test").innerHTML = "Welcome " + name;
-        }
 
 
     </script>

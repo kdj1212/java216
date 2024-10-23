@@ -4,13 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로그인</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>로그인</h1>
+    <nav>
+        <div class="title">
+            <h1> Veggie Shop</h1>
+
+        </div>
+
+        <div class="category">
+            <ul>
+                <li><a href="index.html">과일</a></li>
+                <li><a href="#veggies">야채</a></li>
+                <li><a href="#salads">샐러드</a></li>
+                <li><a href="#nuts">견과류</a></li>
+                <li><a href="#gift">선물 박스</a></li>
+                <li><a href="bmi.html">BMI 계산</a></li>
+            </ul>
+        </div>
+
+        <div class="login">
+            <div class="sign_box" style="margin-right: 12px;"><a href="sign.html">회원가입</a></div>
+            <div class="login_box"><a href="login.html">로그인</a></div>
+        </div>
+        
+        </div>
+    </nav>
+    
+    <div style="text-align: center;">
+    <h2>로그인</h2>
     <form action="index.php" method="post">
         아이디 : <input type="text" name="id"> <br>
         비밀번호 : <input type="password" name="pw"> <br>
         <input type="submit" value="로그인">
     </form>
+    </div>
 </body>
 </html>
